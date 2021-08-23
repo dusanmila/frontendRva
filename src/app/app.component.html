@@ -1,0 +1,50 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="over" [fixedInViewport]="true" opened mode="side">
+        <mat-accordion>
+            <a mat-button style="text-align: center">
+                <mat-icon [routerLink] = "['/home']">
+                    Home
+                </mat-icon>
+            </a>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Aplikacija
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Fakultet
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-button [routerLink] = "['/smer']">Smer</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a mat-button [routerLink] = "['/projekat']">Projekat</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a mat-button [routerLink] = "['/grupa']">Grupa</a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Informacije
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Osnovne informacije 
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-button [routerLink] = "['/home']" >Početna</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a mat-button [routerLink] = "['/author']">Autor</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a mat-button [routerLink] = "['/about']">O projektu</a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
